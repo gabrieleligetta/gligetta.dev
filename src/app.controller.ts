@@ -28,7 +28,6 @@ export class AppController {
         left: '0cm',
       },
       renderDelay: 1000,
-      base: `https://gligetta.dev`,
     };
 
     // Generate the PDF from the HTML
