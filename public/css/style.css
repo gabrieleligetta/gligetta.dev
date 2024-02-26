@@ -84,13 +84,16 @@ i {
 }
 
 .blackmarkers > li::marker {
+    /* Change marker color */
     content: '◾'; /* Empty content */
-    color: #000000; /* Change marker color */
+    background: #000000;
     font-size: 1rem;
 }
 
 .blackmarkers > li:first-child::marker {
-    content: '◾'; /* Empty content */
+    content: ''; /* Empty content */
+    color: #0F657E;
+    font-size: 1rem;
 }
 
 li span {
