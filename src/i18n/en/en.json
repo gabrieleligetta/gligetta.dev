@@ -1,0 +1,79 @@
+{
+  "contacts": "CONTACTS",
+  "address": "Municipio 6, Milan, MI",
+  "personal_projects": "Personal Projects",
+  "phone": "+39 3286466662",
+  "mail": "gabligetta@gmail.com",
+  "prof_profile": "PROFESSIONAL PROFILE",
+  "personal_experiences": "PERSONAL PROJECTS",
+  "prof_profile_content": "Actively seeking interesting projects in the world of Serverless or JS applications. I mainly work with Node.JS but I also have knowledge of PHP, Java. Currently working on a Nest.JS project involving communication between mobile devices and BE systems. I am a highly motivated individual and open to learning. I am also precise, reliable, polite, and autonomous in achieving the assigned objectives.",
+  "skills_title": "SKILLS AND COMPETENCES",
+  "work_experiences": "WORK AND PROFESSIONAL EXPERIENCE",
+  "school_experiences": "EDUCATION AND TRAINING",
+  "school_1": "IFTS Developer Java, Android & Web Development: Java, Web and Android Programming Angelo Rizzoli Institute",
+  "school_1_dates": "05/2019",
+  "school_2": "High School Diploma in Science: Scientific Quinto Ennio High School",
+  "school_2_dates": "Gallipoli, 09/2012",
+  "notomia": {
+    "experience": "<b>Web Developer</b> Notomia - Milan, MI",
+    "dates": "01/2022 - present",
+    "skills": {
+      "one": "Development and maintenance of Backend infrastructure for Serverless projects.",
+      "two": "Use of amazon AWS services.",
+      "three": "Use of lambda functions (NodeJS) and graphQL for API creation.",
+      "four": "Management of OpenSearch instances for indexing and searching Database contents",
+      "five": "Use of NoSql Databases (DynamoDB)",
+      "six": "Use of ECS instances for managing asynchronous computational operations on the database.",
+      "seven": "Development and maintenance of microservices structures on Nest.JS framework.",
+      "eight": "Use of kafka for communication between different microservices",
+      "nine": "Use of Bull and Redis for managing extraction queues on NoSQL databases (mongoDB)"
+    }
+  },
+  "nextre": {
+    "experience": "<b>Web Developer</b> Nextre Digital - Milan, MI",
+    "dates": "01/2021 - 12/2021",
+    "skills": {
+      "one": "Estimation of development times for projects in the Prestashop / E-commerce environment",
+      "two": "Experience in PHP development",
+      "three": "Planning and development of projects with Laravel Framework.",
+      "four": "Planning and development of projects with CMS: Prestashop, Magento 2.",
+      "five": "Use of code versioning systems."
+    }
+  },
+  "zeratech": {
+    "experience": "<b>Junior Web Developer</b> ZeraTech - Milan, MI",
+    "dates": "03/2019 - 12/2020",
+    "skills": {
+      "one": "Estimation of development times for projects in the Prestashop / E-commerce environment",
+      "two": "Experience in PHP development",
+      "three": "Planning and development of projects with CMS: Prestashop",
+      "four": "Use of code versioning systems."
+    }
+  },
+  "oneSpellPerRound": {
+    "experience": "<b><a href='https://github.com/gabrieleligetta/OneSpellPerRound' target='_blank'>OneSpellPerRound</a></b> Telegram <a href='https://t.me/OneSpellPerRoundbot' target='_blank'>Bot</a>",
+    "dates": "04/2021 - present",
+    "skills": {
+      "one": "Use of node.js and Telegraf library",
+      "two": "Creation of pg for Dungeon and Dragons in three modes: random, optimized, standard",
+      "three": "Integration with ChatGPT API for creating daily interactive fantasy stories featuring <a href='/marta' target='_blank'>Marta</a> The Duck with the witch hat",
+      "four": "In the future, the possibility of creating your own character to bring into stories is planned, with exp and loot system (RPG style)"
+    }
+  },
+  "tradingBot": {
+    "experience": "<b><a href='https://github.com/gabrieleligetta/OneSpellPerRound' target='_blank'>TradingBot</a></b> MetaTrader Expert Advisor",
+    "dates": "02/2024 - present",
+    "skills": {
+      "one": "Use of mql, the programming language of the MetaTrader 5 platform",
+      "two": "Creation of bots for automatic trading on the forex market"
+    }
+  },
+  "gligetta": {
+    "experience": "<b><a href='https://github.com/gabrieleligetta/gligetta.dev' target='_blank'>gligetta.dev</a></b> hosted cv",
+    "dates": "02/2023 - present",
+    "skills": {
+      "one": "Use of nest.js, hosting of responsive and multilingual cv, with the possibility of saving in pdf"
+    }
+  },
+  "privacy_footer": "I authorize the processing of personal data contained in my CV pursuant to art. 13 of legislative decree 196/2003 and art. 13 of EU regulation 2016/679 on the protection of individuals with regard to the processing of personal data"
+}

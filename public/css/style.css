@@ -1,0 +1,630 @@
+* {
+    font-family: "Blinker", sans-serif !important;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.ml-4 {
+    margin-left: 4rem !important;
+}
+
+.d-flex-center {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%
+}
+
+.image-container {
+    width: 300px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    overflow: hidden; /* Hide overflow */
+}
+
+.image-container img {
+    width: 100%; /* Ensure image fills container */
+    height: 100%; /* Ensure image fills container */
+    object-fit: cover; /* Scale image to cover container */
+    border-radius: 50%;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.bottom-ul {
+    list-style-position: inside;
+    line-height: 2;
+    font-size: 1.25rem;
+}
+
+.right-ul {
+    list-style-position: outside;
+    line-height: 1;
+    padding-left: 8px;
+}
+
+.notomia-ul {
+    list-style-position: outside;
+    line-height: 1;
+    padding-left: 1rem;
+}
+
+
+.hide-md {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.hide-sm {
+    visibility: visible;
+    max-height: unset;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+.graymarkers > li::marker {
+    color: #5f6e79; /* Change marker color */
+}
+
+.greenmarkers > li::marker {
+    color: #0F657E; /* Change marker color */
+}
+
+.blackmarkers > li::marker {
+    content: '◾'; /* Empty content */
+    color: #000000; /* Change marker color */
+    font-size: 1rem;
+}
+
+.blackmarkers > li:first-child::marker {
+    content: '◾'; /* Empty content */
+}
+
+li span {
+    position: relative;
+    left: 20px;
+}
+
+.bg-grayish {
+    background-color: #CFDFE6;
+
+}
+
+.bbb {
+    border-bottom: 2px solid black; /* Set the color and thickness of the bottom border */
+}
+
+.lbb {
+    border-left: 2px solid black; /* Set the color and thickness of the bottom border */
+}
+
+.justify {
+    text-align: justify;
+}
+
+.white {
+    color: white;
+}
+
+.slateg {
+    color: #0F657E;
+}
+
+.privacy {
+    color: #8a8a8a;
+    font-size: 10px;
+    padding-left: 0;
+}
+
+/*download button classes*/
+#myBtn {
+    position: fixed; /* Fixed/sticky position */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: transparent; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    font-size: 50px; /* Increase font size */
+    transition: transform .2s; /* Animation */
+}
+
+#mylanguageBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    left: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: transparent; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 50px; /* Increase font size */
+    transition: transform .2s; /* Animation */
+}
+
+#myBtn:hover {
+    transform: scale(1.5);
+}
+
+#mylanguageBtn:hover {
+    transform: scale(1.5);
+}
+
+@media only screen and (max-width: 1199px) {
+    .image-container {
+        width: 250px; /* Set a fixed width */
+        height: 250px; /* Set a fixed height */
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .image-container {
+        width: 200px; /* Set a fixed width */
+        height: 200px; /* Set a fixed height */
+    }
+
+    .bottom-ul {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 805px) {
+    p {
+        padding: 0 !important;
+    }
+
+    .hide-sm {
+        visibility: visible;
+        max-height: unset;
+    }
+
+    .hide-md {
+        visibility: hidden;
+        max-height: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .image-container {
+        width: 300px; /* Set a fixed width */
+        height: 300px; /* Set a fixed height */
+    }
+
+    .hide-sm {
+        visibility: hidden;
+        max-height: 0;
+    }
+
+    .hide-md {
+        visibility: visible;
+        max-height: unset;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+
+    #myBtn {
+        padding: 10px; /* Some padding */
+        bottom: 10px; /* Place the button at the bottom of the page */
+        right: 20px; /* Place the button 30px from the right */
+        font-size: 40px; /* Increase font size */
+    }
+
+    #mylanguageBtn {
+        padding: 10px; /* Some padding */
+        bottom: 10px; /* Place the button at the bottom of the page */
+        left: 20px; /* Place the button 30px from the right */
+        font-size: 40px; /* Increase font size */
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .image-container {
+        width: 200px; /* Set a fixed width */
+        height: 200px; /* Set a fixed height */
+    }
+
+    h5 {
+        padding: 0 !important;
+    }
+
+    .hide-sm {
+        display: none;
+    }
+
+    .hide-md {
+        margin-top: 1rem;
+        display: block;
+        margin-bottom: 3rem;
+        font-size: 2.2rem;
+    }
+
+    .m-5 {
+        margin: 0 !important;
+    }
+
+    .ml-4 {
+        margin-left: 1px !important;
+    }
+
+    .lbb {
+        margin-top: 3rem !important;
+    }
+
+    #myBtn {
+        padding: 5px; /* Some padding */
+        bottom: 10px; /* Place the button at the bottom of the page */
+        right: 20px; /* Place the button 30px from the right */
+        font-size: 40px; /* Increase font size */
+    }
+
+    #mylanguageBtn {
+        padding: 5px; /* Some padding */
+        bottom: 10px; /* Place the button at the bottom of the page */
+        left: 20px; /* Place the button 30px from the right */
+        font-size: 40px; /* Increase font size */
+    }
+}
+
+@media print {
+    * {
+        font-family: "Blinker", sans-serif !important;
+    }
+
+    p {
+        margin-bottom: 0.6rem;
+    }
+
+    @page {
+        margin: 0;
+        size: A4 !important;
+    }
+
+    .blackmarkers > li::marker {
+        content: ''; /* Empty content */
+        color: #000000; /* Change marker color */
+        font-size: 1rem;
+    }
+
+    .right-ul {
+        padding-left: 11px !important;
+    }
+
+    .blackmarkers > li:first-child::marker {
+        list-style-position: inside !important;
+    }
+
+    .greenmarkers > li {
+        margin-bottom: 0.5rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .bottom-ul {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .m-5 {
+        margin: 1rem 1rem 1rem 3rem !important;
+    }
+
+    .mt-5 {
+        margin-top: 0.5rem !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 1rem !important;
+    }
+
+    .pt-5 {
+        padding-top: 1rem !important;
+    }
+
+    .pb-5 {
+        padding-bottom: 0 !important;
+    }
+
+    .image-container img {
+        width: 100%; /* Ensure image fills container */
+        height: 100%; /* Ensure image fills container */
+        object-fit: cover; /* Scale image to cover container */
+        border-radius: 250px;
+    }
+
+    .image-container {
+        width: 250px !important; /* Set a fixed width */
+        height: 250px !important; /* Set a fixed height */
+    }
+
+    body {
+        min-width: 992px !important;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .container {
+        min-width: 992px !important;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .col-print-1 {
+        width: 8%;
+        float: left;
+    }
+
+    .col-print-2 {
+        width: 16%;
+        float: left;
+    }
+
+    .col-print-3 {
+        width: 25%;
+        float: left;
+    }
+
+    .col-print-4 {
+        width: 33%;
+        float: left;
+    }
+
+    .col-print-5 {
+        width: 42%;
+        float: left;
+    }
+
+    .col-print-6 {
+        width: 50%;
+        float: left;
+    }
+
+    .col-print-7 {
+        width: 58%;
+        float: left;
+    }
+
+    .col-print-8 {
+        width: 66%;
+        float: left;
+    }
+
+    .col-print-9 {
+        width: 75%;
+        float: left;
+    }
+
+    .col-print-10 {
+        width: 83%;
+        float: left;
+    }
+
+    .col-print-11 {
+        width: 92%;
+        float: left;
+    }
+
+    .col-print-12 {
+        width: 100%;
+        float: left;
+    }
+}
+
+.blinker-thin {
+    font-family: "Blinker", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.blinker-extralight {
+    font-family: "Blinker", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.blinker-light {
+    font-family: "Blinker", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.blinker-regular {
+    font-family: "Blinker", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blinker-semibold {
+    font-family: "Blinker", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.blinker-bold {
+    font-family: "Blinker", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.blinker-extrabold {
+    font-family: "Blinker", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.blinker-black {
+    font-family: "Blinker", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.pdf-print {
+    * {
+        font-family: "Blinker", sans-serif !important;
+    }
+
+    @page {
+        margin: 0;
+        size: A3 !important;
+    }
+
+
+    .blackmarkers > li::marker {
+        color: #000000; /* Change marker color */
+        font-size: 1rem;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    .bottom-ul {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .m-5 {
+        margin: 1rem 1rem 1rem 3rem !important;
+    }
+
+    .mt-5 {
+        margin-top: 0.5rem !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 1rem !important;
+    }
+
+    .pt-5 {
+        padding-top: 1rem !important;
+    }
+
+    .pb-5 {
+        padding-bottom: 0 !important;
+    }
+
+    .image-container img {
+        width: 100%; /* Ensure image fills container */
+        height: 100%; /* Ensure image fills container */
+        object-fit: cover; /* Scale image to cover container */
+        border-radius: 250px;
+    }
+
+    .image-container {
+        width: 250px !important; /* Set a fixed width */
+        height: 250px !important; /* Set a fixed height */
+    }
+
+    body {
+        min-width: 992px !important;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .container {
+        min-width: 992px !important;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .col-print-1 {
+        width: 8%;
+        float: left;
+    }
+
+    .col-print-2 {
+        width: 16%;
+        float: left;
+    }
+
+    .col-print-3 {
+        width: 25%;
+        float: left;
+    }
+
+    .col-print-4 {
+        width: 33%;
+        float: left;
+    }
+
+    .col-print-5 {
+        width: 42%;
+        float: left;
+    }
+
+    .col-print-6 {
+        width: 50%;
+        float: left;
+    }
+
+    .col-print-7 {
+        width: 58%;
+        float: left;
+    }
+
+    .col-print-8 {
+        width: 66%;
+        float: left;
+    }
+
+    .col-print-9 {
+        width: 75%;
+        float: left;
+    }
+
+    .col-print-10 {
+        width: 83%;
+        float: left;
+    }
+
+    .col-print-11 {
+        width: 92%;
+        float: left;
+    }
+
+    .col-print-12 {
+        width: 100%;
+        float: left;
+    }
+}
