@@ -1,7 +1,6 @@
 import { Controller, Get, Query, Req, Res } from '@nestjs/common';
 import { Response } from 'express';
 import * as path from 'path';
-import * as pdf from 'html-pdf';
 import { AppService } from './app.service';
 import { I18n, I18nContext } from 'nestjs-i18n';
 
@@ -16,10 +15,9 @@ export class AppController {
     @I18n() i18n: I18nContext,
     @Query() query: { lang: string },
   ) {
-    console.log('query');
-    console.log(query);
+    const supportedLanguages = ['it', 'en'];
     let currentLanguage: string;
-    if (!!query) {
+    if (!!query && !!query?.lang && supportedLanguages.includes(query.lang)) {
       currentLanguage = query.lang;
     } else {
       const acceptLanguageHeader = req.headers['accept-language'];
@@ -95,41 +93,5 @@ export class AppController {
         'jquery-3.7.1.min.js',
       ),
     );
-  }
-
-  @Get('download')
-  public async downloadIndex(@Res() res: Response, @I18n() i18n: I18nContext) {
-    // Read the contents of the index.html file
-    const html = this.appService.dynamicHTMLCompile(i18n);
-
-    // Set the PDF options
-    const options: pdf.CreateOptions = {
-      format: 'A4',
-      border: {
-        top: '0cm',
-        right: '0cm',
-        bottom: '0cm',
-        left: '0cm',
-      },
-      renderDelay: 1000,
-    };
-
-    // Generate the PDF from the HTML
-    pdf.create(html, options).toBuffer((err, buffer) => {
-      if (err) {
-        console.error(`Error generating PDF: ${err}`);
-        res.status(500).send(`Error generating PDF: ${err}`);
-      } else {
-        // Set the response headers to indicate that this is a PDF file
-        res.setHeader('Content-Type', 'application/pdf');
-        res.setHeader(
-          'Content-Disposition',
-          'attachment; filename=CV_Ligetta_2023.pdf',
-        );
-
-        // Send the PDF file to the client
-        res.send(buffer);
-      }
-    });
   }
 }

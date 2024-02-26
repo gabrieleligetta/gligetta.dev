@@ -56,7 +56,7 @@
     "skills": {
       "one": "Use of node.js and Telegraf library",
       "two": "Creation of pg for Dungeon and Dragons in three modes: random, optimized, standard",
-      "three": "Integration with ChatGPT API for creating daily interactive fantasy stories featuring <a href='/marta' target='_blank'>Marta</a> The Duck with the witch hat",
+      "three": "Integration with ChatGPT API for creating daily interactive fantasy stories featuring <a href='/marta' target='_blank'>Marta</a> The goose with the hag hat",
       "four": "In the future, the possibility of creating your own character to bring into stories is planned, with exp and loot system (RPG style)"
     }
   },
