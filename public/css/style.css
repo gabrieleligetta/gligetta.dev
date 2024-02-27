@@ -129,17 +129,16 @@ li span {
 .privacy {
     color: #8a8a8a;
     font-size: 10px;
-    padding-left: 0;
 }
 
 /*download button classes*/
-#myBtn {
+.icon-save {
     position: fixed; /* Fixed/sticky position */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: transparent; /* Set a background color */
-    color: white; /* Text color */
+    color: transparent; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     bottom: 20px; /* Place the button at the bottom of the page */
@@ -148,7 +147,7 @@ li span {
     transition: transform .2s; /* Animation */
 }
 
-#mylanguageBtn {
+.icon-language {
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     left: 30px; /* Place the button 30px from the right */
@@ -156,20 +155,41 @@ li span {
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: transparent; /* Set a background color */
-    color: white; /* Text color */
+    color: transparent; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
-    border-radius: 50%; /* Rounded corners */
     font-size: 50px; /* Increase font size */
     transition: transform .2s; /* Animation */
 }
 
-#myBtn:hover {
+.icon-save:hover {
     transform: scale(1.5);
 }
 
-#mylanguageBtn:hover {
+.icon-language:hover {
     transform: scale(1.5);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Optionally, style the scrollbar track and thumb */
+::-webkit-scrollbar-track {
+    background-color: transparent; /* Change this to match your background */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Change this to match your background */
+}
+
+/* Hide markers for Safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    /* For Safari */
+    .right-ul {
+        list-style: none;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -224,18 +244,9 @@ li span {
         margin-top: 3rem;
     }
 
-    #myBtn {
-        padding: 10px; /* Some padding */
-        bottom: 10px; /* Place the button at the bottom of the page */
-        right: 20px; /* Place the button 30px from the right */
-        font-size: 40px; /* Increase font size */
-    }
-
-    #mylanguageBtn {
-        padding: 10px; /* Some padding */
-        bottom: 10px; /* Place the button at the bottom of the page */
-        left: 20px; /* Place the button 30px from the right */
-        font-size: 40px; /* Increase font size */
+    .icon-language, .icon-save {
+        font-size: 30px; /* Increase font size */
+        padding: 0;
     }
 }
 
@@ -272,18 +283,17 @@ li span {
         margin-top: 3rem !important;
     }
 
-    #myBtn {
-        padding: 5px; /* Some padding */
-        bottom: 10px; /* Place the button at the bottom of the page */
-        right: 20px; /* Place the button 30px from the right */
-        font-size: 40px; /* Increase font size */
+    .icon-language, .icon-save {
+        font-size: 30px; /* Increase font size */
+        bottom: 10px;
     }
 
-    #mylanguageBtn {
-        padding: 5px; /* Some padding */
-        bottom: 10px; /* Place the button at the bottom of the page */
-        left: 20px; /* Place the button 30px from the right */
-        font-size: 40px; /* Increase font size */
+    .icon-language {
+        left: 10px;
+    }
+
+    .icon-save {
+        right: 10px;
     }
 }
 

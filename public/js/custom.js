@@ -1,11 +1,18 @@
 $(document).ready(function () {
   const userLanguage = $('html').attr('lang');
   const langButton = $('#mylanguageBtn');
+  const saveButton = $('#myBtn');
   if (userLanguage === 'it') {
-    langButton.text('🇬🇧');
+    saveButton.append('<span class="icon-save" style="color: white">💾</span>');
+    langButton.append(
+      '<span class="icon-language" style="color: white">🇬🇧</span>',
+    );
     langButton.attr('href', '?lang=en');
   } else {
-    langButton.text('🇮🇹');
+    saveButton.append('<span class="icon-save" style="color: white">💾</span>');
+    langButton.append(
+      '<span class="icon-language" style="color: white">🇮🇹</span>',
+    );
     langButton.attr('href', '?lang=it');
   }
   console.log(userLanguage);

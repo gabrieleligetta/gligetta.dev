@@ -32,7 +32,7 @@ export class AppService {
   createHead(): string {
     const head =
       '<head>' +
-      '<meta name="viewport" content="width=device-width, initial-scale=1.0">' +
+      '<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">' +
       '<title>Gabriele Ligetta</title>' +
       '<link href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>" rel="icon">' +
       '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">' +
@@ -51,7 +51,7 @@ export class AppService {
       '<body>' +
       grid +
       '<a href="#" id="mylanguageBtn" title="Language" class="no-print"></a>' +
-      '<a href="#" id="myBtn" title="Download" type="pdf" class="no-print">💾</a>' +
+      '<a href="#" id="myBtn" title="Download" type="pdf" class="no-print"></a>' +
       '</body>';
     return body;
   }
@@ -61,7 +61,7 @@ export class AppService {
     return (
       '          <div class="container">' +
       '            <div class="row">' +
-      '              <div id="father" class="col-12 col-print-12 d-md-flex p-0">' +
+      '              <div id="father" class="col-12 col-print-12 d-md-flex">' +
       '                ' +
       htmlContent +
       '              </div>' +
