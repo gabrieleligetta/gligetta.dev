@@ -367,7 +367,6 @@ li span {
         width: 100%; /* Ensure image fills container */
         height: 100%; /* Ensure image fills container */
         object-fit: cover; /* Scale image to cover container */
-        border-radius: 250px;
     }
 
     .image-container {
@@ -558,7 +557,6 @@ li span {
         width: 100%; /* Ensure image fills container */
         height: 100%; /* Ensure image fills container */
         object-fit: cover; /* Scale image to cover container */
-        border-radius: 250px;
     }
 
     .image-container {

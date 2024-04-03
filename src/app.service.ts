@@ -183,7 +183,7 @@ export class AppService {
      <div id="leftColumnRow" class="row">
      <div class="d-flex-center flex-column">
        <h1 id="nameTitleLeft" class="fw-bolder slateg text-center hide-md">Gabriele Ligetta</h1>
-       <div class="col-12 col-print-12 image-container rainbow-border">
+       <div class="col-12 col-print-12 image-container">
        <img src="/image" class="img-fluid" title="${i18n.t(this.currentLanguage + '.click_to_image')}" onclick="fadeIn()" alt="image">
        </div>
        </div>
