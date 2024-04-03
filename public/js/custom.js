@@ -50,5 +50,12 @@ $(document).ready(function () {
 
 function fadeIn() {
   const image = document.querySelector('.img-fluid');
-  image.style.opacity = image.style.opacity === '1' ? '0' : '1';
+  const placeHolder = document.querySelector('#placeholder');
+  image.style.display = image.style.display === 'block' ? 'none' : 'block';
+  console.log('image.style.display');
+  console.log(image.style.display);
+  placeHolder.style.display =
+    placeHolder.style.display === 'none' ? 'block' : 'none';
+  console.log('placeHolder.style.display');
+  console.log(placeHolder.style.display);
 }

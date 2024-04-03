@@ -183,17 +183,18 @@ export class AppService {
      <div id="leftColumnRow" class="row">
      <div class="d-flex-center flex-column">
        <h1 id="nameTitleLeft" class="fw-bolder slateg text-center hide-md">Gabriele Ligetta</h1>
-       <div class="col-12 col-print-12 image-container">
-       <img src="/image" class="img-fluid" title="${i18n.t(this.currentLanguage + '.click_to_image')}" onclick="fadeIn()" alt="image">
+       <div class="col-12 col-print-12 image-container d-flex-center" onclick="fadeIn()">
+       <span id="placeholder" class="unselectable no-print">${i18n.t(this.currentLanguage + '.click_to_image')}</span>
+       <img src="/image" class="img-fluid unselectable" title="${i18n.t(this.currentLanguage + '.click_to_image')}" alt="image">
        </div>
        </div>
         <div class="col-8 offset-2 pt-5 pb-5 p-0 bbb">
           <div class="row">
-          <h5 class="fw-bolder mt-2">${i18n.t(this.currentLanguage + '.contacts')}</h5>
-          <p class="fw-normal mt-2"><i class="bi bi-geo-alt-fill"></i><span class="m-2">${i18n.t(this.currentLanguage + '.address')}</span></p>
-          <p class="fw-normal mt-2"><i class="bi bi-phone-fill"></i><span class="m-2">${i18n.t(this.currentLanguage + '.phone')}</span></p>
-          <p class="fw-normal mt-2"><i class="bi bi-envelope-at-fill"></i><a class="m-2" href="mailto:gabligetta@gmail.com" target="_blank">${i18n.t(this.currentLanguage + '.mail')}</a></p>
-          <p class="fw-normal mt-2"><i class="bi bi-github"></i><a class="m-2" href="https://github.com/gabrieleligetta" target="_blank">${i18n.t(this.currentLanguage + '.personal_projects')}</a></p>
+          <h5 class="fw-bolder mt-2 unselectable">${i18n.t(this.currentLanguage + '.contacts')}</h5>
+          <p class="fw-normal mt-2 unselectable"><i class="bi bi-geo-alt-fill"></i><span class="m-2">${i18n.t(this.currentLanguage + '.address')}</span></p>
+          <p class="fw-normal mt-2 unselectable"><i class="bi bi-phone-fill"></i><span class="m-2">${i18n.t(this.currentLanguage + '.phone')}</span></p>
+          <p class="fw-normal mt-2 unselectable"><i class="bi bi-envelope-at-fill"></i><a class="m-2" href="mailto:gabligetta@gmail.com" target="_blank">${i18n.t(this.currentLanguage + '.mail')}</a></p>
+          <p class="fw-normal mt-2 unselectable"><i class="bi bi-github"></i><a class="m-2" href="https://github.com/gabrieleligetta" target="_blank">${i18n.t(this.currentLanguage + '.personal_projects')}</a></p>
           </div>
         </div>
         <div class="col-8 offset-2 pt-5 pb-5 p-0 bbb">
