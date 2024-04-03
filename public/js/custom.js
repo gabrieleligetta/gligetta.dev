@@ -47,3 +47,8 @@ $(document).ready(function () {
     content.removeClass('pdf-print');
   });
 });
+
+function fadeIn() {
+  const image = document.querySelector('.img-fluid');
+  image.style.opacity = image.style.opacity === '1' ? '0' : '1';
+}

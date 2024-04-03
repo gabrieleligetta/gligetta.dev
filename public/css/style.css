@@ -29,6 +29,8 @@ h1 {
     width: 300px; /* Set a fixed width */
     height: 300px; /* Set a fixed height */
     overflow: hidden; /* Hide overflow */
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0, 0.1);
 }
 
 .image-container img {
@@ -36,6 +38,9 @@ h1 {
     height: 100%; /* Ensure image fills container */
     object-fit: cover; /* Scale image to cover container */
     border-radius: 50%;
+    opacity: 0.02; /* Initially hidden */
+    transition: opacity 5s ease; /* Fade transition with a duration of 6 seconds */
+    cursor: pointer;
 }
 
 p {
