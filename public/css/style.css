@@ -38,8 +38,8 @@ h1 {
     height: 100%; /* Ensure image fills container */
     object-fit: cover; /* Scale image to cover container */
     border-radius: 50%;
-    opacity: 0.02; /* Initially hidden */
-    transition: opacity 5s ease; /* Fade transition with a duration of 6 seconds */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease; /* Fade transition with a duration of 6 seconds */
     cursor: pointer;
 }
 
