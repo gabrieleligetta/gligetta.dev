@@ -29,7 +29,7 @@ h1 {
     width: 300px; /* Set a fixed width */
     height: 300px; /* Set a fixed height */
     overflow: hidden; /* Hide overflow */
-    border-radius: 50%;
+    border-radius: 50% !important;
     border: 1px solid rgb(0, 0, 0, 0.1);
     cursor: pointer;
 }
@@ -38,7 +38,7 @@ h1 {
     width: 100%; /* Ensure image fills container */
     height: 100%; /* Ensure image fills container */
     object-fit: cover; /* Scale image to cover container */
-    border-radius: 50%;
+    border-radius: 50% !important;
     display: none; /* Initially hidden */
     transition: display 1s ease; /* Fade transition with a duration of 6 seconds */
 }
@@ -371,15 +371,18 @@ li span {
         padding-bottom: 0 !important;
     }
 
+    .image-container {
+        width: 250px !important; /* Set a fixed width */
+        height: 250px !important; /* Set a fixed height */
+        border-radius: 50% !important;
+        overflow: hidden !important; /* Hide overflow */
+    }
+
     .image-container img {
         width: 100%; /* Ensure image fills container */
         height: 100%; /* Ensure image fills container */
         object-fit: cover; /* Scale image to cover container */
-    }
-
-    .image-container {
-        width: 250px !important; /* Set a fixed width */
-        height: 250px !important; /* Set a fixed height */
+        border-radius: 50% !important;
     }
 
     body {
@@ -561,15 +564,18 @@ li span {
         padding-bottom: 0 !important;
     }
 
-    .image-container img {
-        width: 100%; /* Ensure image fills container */
-        height: 100%; /* Ensure image fills container */
-        object-fit: cover; /* Scale image to cover container */
-    }
-
     .image-container {
         width: 250px !important; /* Set a fixed width */
         height: 250px !important; /* Set a fixed height */
+        border-radius: 50% !important;
+        overflow: hidden !important; /* Hide overflow */
+    }
+
+    .image-container img {
+        width: 100%; /* Ensure image fills container */
+        height: 100%; /* Ensure image fills container */
+        border-radius: 50% !important;
+        object-fit: cover; /* Scale image to cover container */
     }
 
     body {
